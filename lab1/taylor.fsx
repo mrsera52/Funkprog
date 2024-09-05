@@ -31,7 +31,7 @@ let taylor_smart x =
     let rec loop n term sum =
         if abs term < eps then sum
         else
-            let nextTerm = -term * x * x  / (2. * n + 1.) * (2. * (n - 1.) + 1.) 
+            let nextTerm = -term * x*x  / (2. * n + 1.) * (2. * (n - 1.) + 1.) 
             loop (n + 1.) nextTerm (sum + nextTerm)
     loop 1 initialTerm (initialTerm)
 
@@ -39,7 +39,7 @@ let taylor_smart x =
 
 let main =
     for i = 0 to n do
-        let x = a + float i / float n * (b - a)
+        let x = a + (float i) / (float n) * (b-a)
         printfn "%5.2f  %10.6f  %10.6f %10.6f " x (main_func x) (taylor_naive x) (taylor_smart x)
 
 main
