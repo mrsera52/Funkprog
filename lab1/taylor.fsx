@@ -1,3 +1,5 @@
+//вариант 23 
+
 let main_func x = atan(x)
 
 let a = 0.
