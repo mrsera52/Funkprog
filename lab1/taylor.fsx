@@ -20,7 +20,7 @@ let rec taylor_naive x =
         if abs current_term > eps then
             loop (cnt + 1.) (sum + current_term)
         else
-            sum 
+             sum 
     loop 0. 0.
 
 
