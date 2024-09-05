@@ -22,7 +22,7 @@ let rec iterations f x0 =
         iterations f x1
 
 
-let f1 x = (3.0 * x) - 4.0 * log x - 5.0
+let f1 x = (3.0 * x) - 4.0 *log x- 5.0
 let f2 x = cos(2.0 / x) - 2.0* sin(1. / x) + 1.0 / x
 
 let f3 x = sqrt(1.0 - 0.4 * x ** 2.0)-asin(x)
